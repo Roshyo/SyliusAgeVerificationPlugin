@@ -5,12 +5,6 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "BeHappy Communication",
-            "role": "Organization",
-            "homepage": "http://www.behappycom.com",
-            "email": "projets@behappycom.com"
-        },
-        {
             "name": "Stéphane DECOCK",
             "role": "Developer",
             "homepage": "http://www.behappycom.com",
