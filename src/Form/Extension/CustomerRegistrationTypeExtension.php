@@ -22,7 +22,7 @@ use Symfony\Component\Validator\Constraints\NotBlank;
 class CustomerRegistrationTypeExtension extends AbstractTypeExtension implements ContainerAwareInterface
 {
     use ContainerAwareTrait;
-    
+
     /**
      * CustomerProfileTypeExtension constructor.
      *
@@ -32,7 +32,7 @@ class CustomerRegistrationTypeExtension extends AbstractTypeExtension implements
     {
         $this->setContainer($container);
     }
-    
+
     /**
      * @param FormBuilderInterface $builder
      * @param array                $options
@@ -55,12 +55,17 @@ class CustomerRegistrationTypeExtension extends AbstractTypeExtension implements
                 ]
             ]);
     }
-    
+
     /**
      * @return string
      */
     public function getExtendedType(): string
     {
         return CustomerRegistrationType::class;
+    }
+
+    public static function getExtendedTypes(): array
+    {
+        return [CustomerRegistrationType::class];
     }
 }
